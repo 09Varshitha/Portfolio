@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bhukya Varshitha | AI Engineer & Data Analyst</title>
+    <meta name="description" content="Portfolio of Bhukya Varshitha - AI Engineer, Data Analyst, ML Enthusiast, C++ DSA Developer.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Poppins:wght@300;400;500;600&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- GSAP & ScrollTrigger -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+<body>
+    <!-- Cinematic Preloader -->
+    <div id="preloader">
+        <div class="loader-content">
+            <h1 class="loader-logo glow-text" style="font-family: 'Dancing Script', cursive; font-size: 4rem;">Varshitha</h1>
+            <div class="loader-bar">
+                <div class="loader-progress"></div>
+            </div>
+            <p class="loader-text" style="color: var(--neon-cyan); letter-spacing: 2px; font-size: 0.9rem; font-weight: 600; text-transform: uppercase;">INITIALIZING EXPERIENCE <span id="loading-percentage">0%</span></p>
+        </div>
+    </div>
+
+    <!-- Custom Cursor -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <!-- Scroll Progress -->
+    <div id="scroll-progress"></div>
+
+    <!-- Background 3D Particles -->
+    <div id="particles-container"></div>
+    
+    <!-- Navbar -->
+    <nav class="navbar glass">
+        <a href="#" class="logo glow-text" style="font-size: 2.2rem; font-family: 'Dancing Script', cursive; text-decoration: none; letter-spacing: 1px; color: var(--neon-purple);">Varshitha</a>
+        <ul class="nav-links">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#training">Training</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+            <span></span><span></span><span></span>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="hero-content" data-parallax="true">
+                <div class="glow-badge" style="background: rgba(0,229,255,0.1); border: 1px solid var(--neon-cyan); padding: 0.5rem 1.5rem; border-radius: 30px; display: inline-block; margin-bottom: 1.5rem; color: var(--neon-cyan); letter-spacing: 2px;">Hello, I'm</div>
+                <h1 class="hero-title glitch" data-text="Bhukya Varshitha">Bhukya Varshitha</h1>
+                <h2 class="hero-subtitle"><span id="typewriter"></span><span class="cursor">|</span></h2>
+                <div class="tagline-box glass" style="border: 1px solid var(--neon-purple); box-shadow: inset 0 0 10px rgba(142,36,170,0.2);">
+                    <p class="hero-tagline">"Engineering Data. Designing Intelligence."</p>
+                </div>
+                <p class="hero-desc">Building intelligent AI systems, solving complex problems, and turning data into real impact.</p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-outline glow-effect" style="border-color: var(--neon-blue); color: var(--neon-blue);">View Projects</a>
+                    <a href="assets/resume.pdf" download="Varshitha_Bhukya_Resume.pdf" class="btn btn-outline glow-effect" style="border-color: var(--neon-purple); color: var(--neon-purple);">Download Resume</a>
+                    <a href="#contact" class="btn btn-outline glow-effect">Contact Me</a>
+                </div>
+            </div>
+            <div class="hero-image-wrapper parallax-element" data-speed="0.05">
+                <div class="orbital-ring rings-1"></div>
+                <div class="orbital-ring rings-2"></div>
+                <img src="assets/profile.jpeg" alt="Bhukya Varshitha" class="hero-image-modern">
+            </div>
+        </section>
+        
+        <!-- About Section -->
+        <section id="about" class="about-section scroll-reveal">
+            <div class="skills-header" style="text-align: center; margin-bottom: 4rem;">
+                <h2 class="section-title" style="justify-content: center; margin-bottom: 1rem; font-size: 3rem;">About Me</h2>
+                <div style="width: 150px; height: 5px; background: linear-gradient(90deg, transparent, var(--neon-cyan), transparent); margin: 0 auto; box-shadow: 0 0 15px var(--neon-cyan);"></div>
+            </div>
+            
+            <div class="about-single-box bento-card" style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 4rem; width: 100%; max-width: 1200px; margin: 0 auto;">
+                <div class="bento-glow cyan-glow" style="z-index: 0;"></div>
+                <div class="bento-glow purple-glow" style="right: 0; bottom: 0; left: auto; top: auto; z-index: 0;"></div>
+                
+                <div style="flex: 1.2; min-width: 320px; position: relative; z-index: 1;">
+                    <p style="margin-bottom: 2rem; font-size: 1.15rem; line-height: 1.8;">I’m an aspiring software developer who loves turning ideas into real-world solutions through code. I’m sharpening my skills in <strong>C++, DSA</strong>, and writing efficient, clean logic.</p>
+                    <p style="margin-bottom: 2rem; font-size: 1.15rem; line-height: 1.8;">I enjoy exploring Data Science with <strong>Python</strong>—analyzing data, creating visualizations, and experimenting with machine learning models. I’m also learning frontend and backend development to build complete, full-stack applications.</p>
+                    <p style="margin-bottom: 2rem; font-size: 1.15rem; line-height: 1.8;">I love exploring new technologies, understanding how systems work, and growing through hands-on projects. I enjoy challenges and love creating meaningful, impactful solutions.</p>
+                </div>
+                
+                <div style="flex: 0.8; display: flex; justify-content: center; min-width: 250px; position: relative; z-index: 1;">
+                    <div class="about-visual" style="transform: scale(0.9);">
+                        <div class="cube-container">
+                            <div class="cube">
+                                <div class="face front"><i class="fa-solid fa-brain"></i></div>
+                                <div class="face back"><i class="fa-solid fa-database"></i></div>
+                                <div class="face right"><i class="fa-solid fa-code"></i></div>
+                                <div class="face left"><i class="fa-solid fa-chart-line"></i></div>
+                                <div class="face top"><i class="fa-solid fa-microchip"></i></div>
+                                <div class="face bottom"><i class="fa-solid fa-network-wired"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills-section scroll-reveal">
+            <div class="skills-header" style="text-align: center; margin-bottom: 4rem;">
+                <h2 class="section-title" style="justify-content: center; margin-bottom: 1rem; font-size: 3rem;">Technical Arsenal</h2>
+                <div style="width: 150px; height: 5px; background: linear-gradient(90deg, transparent, var(--neon-cyan), transparent); margin: 0 auto; box-shadow: 0 0 15px var(--neon-cyan);"></div>
+            </div>
+            
+            <div class="skills-grid-modern">
+                <div class="skill-modern-card tilt-card">
+                    <i class="fa-solid fa-code skill-icon" style="color: #4FC3F7;"></i>
+                    <p>C++</p>
+                </div>
+                <div class="skill-modern-card tilt-card">
+                    <i class="fa-brands fa-python skill-icon" style="color: #FFD43B;"></i>
+                    <p>Python</p>
+                </div>
+                <div class="skill-modern-card tilt-card">
+                    <i class="fa-solid fa-c skill-icon" style="color: #A8B9CC;"></i>
+                    <p>C</p>
+                </div>
+                <div class="skill-modern-card tilt-card">
+                    <i class="fa-brands fa-java skill-icon" style="color: #ED8B00;"></i>
+                    <p>Java</p>
+                </div>
+                <div class="skill-modern-card tilt-card">
+                    <i class="fa-brands fa-js skill-icon" style="color: #F7DF1E;"></i>
+                    <p>JavaScript</p>
+                </div>
+                <div class="skill-modern-card tilt-card">
+                    <i class="fa-brands fa-html5 skill-icon" style="color: #E34F26;"></i>
+                    <p>HTML5</p>
+                </div>
+                <div class="skill-modern-card tilt-card">
+                    <i class="fa-brands fa-css3-alt skill-icon" style="color: #1572B6;"></i>
+                    <p>CSS3</p>
+                </div>
+                <div class="skill-modern-card tilt-card">
+                    <i class="fa-brands fa-react skill-icon" style="color: #61DAFB;"></i>
+                    <p>React</p>
+                </div>
+                <div class="skill-modern-card tilt-card">
+                    <i class="fa-brands fa-node-js skill-icon" style="color: #339933;"></i>
+                    <p>Node.js</p>
+                </div>
+
+                <div class="skill-modern-card tilt-card">
+                    <i class="fa-solid fa-database skill-icon" style="color: #00E5FF;"></i>
+                    <p>SQL</p>
+                </div>
+                <div class="skill-modern-card tilt-card">
+                    <i class="fa-solid fa-brain skill-icon" style="color: #8E24AA;"></i>
+                    <p>ML Models</p>
+                </div>
+
+                <div class="skill-modern-card tilt-card">
+                    <i class="fa-brands fa-git-alt skill-icon" style="color: #F05032;"></i>
+                    <p>Git</p>
+                </div>
+                <div class="skill-modern-card tilt-card">
+                    <i class="fa-brands fa-github skill-icon" style="color: #FFFFFF;"></i>
+                    <p>GitHub</p>
+                </div>
+                <div class="skill-modern-card tilt-card">
+                    <i class="fa-solid fa-file-excel skill-icon" style="color: #217346;"></i>
+                    <p>Excel</p>
+                </div>
+                <div class="skill-modern-card tilt-card">
+                    <i class="fa-solid fa-chart-bar skill-icon" style="color: #F2C811;"></i>
+                    <p>PowerBI</p>
+                </div>
+            </div>
+        </section>
+        <!-- Training Section -->
+        <section id="training" class="projects-section scroll-reveal">
+            <div class="skills-header" style="text-align: center; margin-bottom: 4rem;">
+                <h2 class="section-title" style="justify-content: center; margin-bottom: 1rem; font-size: 3rem;">Training</h2>
+                <div style="width: 150px; height: 5px; background: linear-gradient(90deg, transparent, var(--neon-cyan), transparent); margin: 0 auto; box-shadow: 0 0 15px var(--neon-cyan);"></div>
+            </div>
+            
+            <div style="margin-bottom: 4rem; display: flex; justify-content: center; padding: 0 5%;">
+                <div class="tilt-card training-split-card">
+                    <div class="training-split-left">
+                        <img src="assets/dsa_nodes.png" alt="DSA Concepts and Nodes">
+                        <div class="training-split-overlay"></div>
+                    </div>
+                    <div class="training-split-right">
+                        <h3 style="font-size: 2.2rem; margin-bottom: 1rem; color: #fff;">DSA using C++</h3>
+                        <p class="project-desc" style="font-size: 1.1rem; line-height: 1.7; margin-bottom: 1.5rem;">An intensive and comprehensive training program focused on mastering Data Structures and Algorithms with C++. This training emphasized rigorous problem-solving techniques, optimizing algorithmic complexity, and efficient memory management to design highly scalable computational architectures.</p>
+                        <div class="project-tags" style="justify-content: flex-start; margin-bottom: 2rem;">
+                            <span>C++</span><span>DSA</span><span>Problem Solving</span>
+                        </div>
+                        <div class="project-links" style="justify-content: flex-start;">
+                            <a href="assets/training.pdf" target="_blank" class="btn btn-outline glow-effect">View Certificate</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+         <!-- Projects Section -->
+        <section id="projects" class="projects-section scroll-reveal">
+            <div class="skills-header" style="text-align: center; margin-bottom: 4rem;">
+                <h2 class="section-title" style="justify-content: center; margin-bottom: 1rem; font-size: 3rem;">Featured Projects</h2>
+                <div style="width: 150px; height: 5px; background: linear-gradient(90deg, transparent, var(--neon-cyan), transparent); margin: 0 auto; box-shadow: 0 0 15px var(--neon-cyan);"></div>
+            </div>
+            
+            <div class="projects-grid-modern">
+                <!-- Project 1 -->
+                <div class="project-modern-card tilt-card">
+                    <img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="FocusFlow AI Project" class="project-image">
+                    <div class="project-content">
+                        <h3>FocusFlow AI</h3>
+                        <p class="project-desc">An Intelligent Study Planner solving the problem of unorganized learning. Built to optimize study schedules dynamically.</p>
+                        <div class="project-tags">
+                            <span>React</span><span>Node.js</span><span>AI Integ.</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/09Varshitha/FocusFlow-AI" target="_blank" class="btn btn-outline">GitHub</a>
+                            <a href="https://focus-flow-bui07vdr3-09varshithas-projects.vercel.app/" target="_blank" class="btn btn-outline glow-effect">Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-modern-card tilt-card">
+                    <img src="https://images.unsplash.com/photo-1611996575749-79a3a250f948?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Snake & Ladder Game Project" class="project-image">
+                    <div class="project-content">
+                        <h3>Snake & Ladder Game</h3>
+                        <p class="project-desc">A logic-heavy implementation of the classic board game leveraging Data Structures and Algorithms in C++ for optimal pathfinding and game state management.</p>
+                        <div class="project-tags">
+                            <span>C++</span><span>DSA</span><span>OOP</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/09Varshitha/Snake-and-ladder-game" target="_blank" class="btn btn-outline">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-modern-card tilt-card">
+                    <img src="https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Drug Prescription Analysis Project" class="project-image">
+                    <div class="project-content">
+                        <h3>Drug Prescription Analysis</h3>
+                        <p class="project-desc">From Data to Diagnosis. Analyzing prescription patterns using ML classification models to optimize and predict the best targeted drugs for specific conditions.</p>
+                        <div class="project-tags">
+                            <span>Python</span><span>Scikit-Learn</span><span>Pandas</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/09Varshitha/From-Data-to-Diagnosis-Drug-Prescription-Analysis-Using-ML" target="_blank" class="btn btn-outline">GitHub</a>
+                            <a href="https://www.linkedin.com/posts/varshitha12_machinelearning-datascience-python-activity-7409159267959828481-9utg?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEf0SXoBhZ4nwQ8sxmro8-pIv7fdX1DSnCg" target="_blank" class="btn btn-outline glow-effect">Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 (New) -->
+                <div class="project-modern-card tilt-card">
+                    <img src="assets/bright_health_dashboard.png" alt="Global Health Analytics Dashboard" class="project-image">
+                    <div class="project-content">
+                        <h3>Global Health and Demographic Insights</h3>
+                        <p class="project-desc">A comprehensive data analytics dashboard offering insights into global health trends and demographics, allowing interactive data exploration.</p>
+                        <div class="project-tags">
+                            <span>PowerBI</span><span>Data Analytics</span><span>Dashboard</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/09Varshitha/Global-Health-and-Demographic-Insights" target="_blank" class="btn btn-outline">GitHub</a>
+                            <a href="https://www.linkedin.com/posts/varshitha12_powerbi-dataanalytics-dashboarddesign-activity-7405671920865554432-K87V?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEf0SXoBhZ4nwQ8sxmro8-pIv7fdX1DSnCg" target="_blank" class="btn btn-outline glow-effect">Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certificates Section -->
+        <section id="certificates" class="background-section scroll-reveal">
+            <div class="skills-header" style="text-align: center; margin-bottom: 4rem;">
+                <h2 class="section-title" style="justify-content: center; margin-bottom: 1rem; font-size: 3rem;">Certificates</h2>
+                <div style="width: 150px; height: 5px; background: linear-gradient(90deg, transparent, var(--neon-cyan), transparent); margin: 0 auto; box-shadow: 0 0 15px var(--neon-cyan);"></div>
+            </div>
+            
+            <div class="cert-grid-modern">
+                <!-- Cert 1 -->
+                <a href="assets/cert-oci-foundations.pdf" target="_blank" class="cert-modern-card tilt-card">
+                    <i class="fa-solid fa-cloud cert-icon" style="color: #FF5252;"></i>
+                    <h4>Oracle Cloud 2025</h4>
+                    <p>Foundations Associate</p>
+                </a>
+                <!-- Cert 2 -->
+                <a href="assets/cert-oci-ai.pdf" target="_blank" class="cert-modern-card tilt-card">
+                    <i class="fa-solid fa-robot cert-icon" style="color: #69F0AE;"></i>
+                    <h4>Oracle AI 2025</h4>
+                    <p>Foundations Associate</p>
+                </a>
+                <!-- Cert 3 -->
+                <a href="assets/cert-oracle-data.pdf" target="_blank" class="cert-modern-card tilt-card">
+                    <i class="fa-solid fa-database cert-icon" style="color: #FFD43B;"></i>
+                    <h4>Oracle Data 2025</h4>
+                    <p>Foundations Associate</p>
+                </a>
+                <!-- Cert 4 -->
+                <a href="assets/cert-nptel.pdf" target="_blank" class="cert-modern-card tilt-card">
+                    <i class="fa-solid fa-network-wired cert-icon" style="color: #4FC3F7;"></i>
+                    <h4>NPTEL</h4>
+                    <p>Cloud Computing</p>
+                </a>
+                <!-- Cert 5 -->
+                <a href="assets/cert-sql.pdf" target="_blank" class="cert-modern-card tilt-card">
+                    <i class="fa-solid fa-terminal cert-icon" style="color: #BA68C8;"></i>
+                    <h4>SQL Intermediate</h4>
+                    <p>Certification</p>
+                </a>
+                <!-- Cert 6 -->
+                <a href="assets/hackathon.jpg" target="_blank" class="cert-modern-card tilt-card">
+                    <i class="fa-solid fa-trophy cert-icon" style="color: #FFD43B;"></i>
+                    <h4>Hackathon</h4>
+                    <p>Achievement</p>
+                </a>
+            </div>
+        </section>
+
+        <!-- Education Journey Section -->
+        <section id="education" class="background-section scroll-reveal">
+            <div class="skills-header" style="text-align: center; margin-bottom: 4rem;">
+                <h2 class="section-title" style="justify-content: center; margin-bottom: 1rem; font-size: 3rem;">Education Journey</h2>
+                <div style="width: 150px; height: 5px; background: linear-gradient(90deg, transparent, var(--neon-cyan), transparent); margin: 0 auto; box-shadow: 0 0 15px var(--neon-cyan);"></div>
+            </div>
+            
+            <div class="cert-grid-modern">
+                <!-- B.Tech -->
+                <div class="cert-modern-card tilt-card" style="cursor: default;">
+                    <i class="fa-solid fa-graduation-cap cert-icon" style="color: #4FC3F7;"></i>
+                    <h4 style="font-size: 1.3rem;">B.Tech in Computer Science</h4>
+                    <p style="color: var(--neon-blue); font-weight: 700; margin-bottom: 0.5rem; font-size: 0.95rem; letter-spacing: 1px;">2023 - 2027</p>
+                    <p style="margin-bottom: 0.5rem; color: var(--text-main); font-weight: 500;">Lovely Professional University, Phagwara, Punjab</p>
+                    <p style="color: var(--neon-cyan); margin-top: 1rem; font-weight: 600; font-size: 1.1rem;">CGPA: 7.01</p>
+                </div>
+                
+                <!-- Intermediate -->
+                <div class="cert-modern-card tilt-card" style="cursor: default;">
+                    <i class="fa-solid fa-school cert-icon" style="color: #FFD43B;"></i>
+                    <h4 style="font-size: 1.3rem;">Intermediate</h4>
+                    <p style="color: var(--neon-blue); font-weight: 700; margin-bottom: 0.5rem; font-size: 0.95rem; letter-spacing: 1px;">2020 - 2022</p>
+                    <p style="margin-bottom: 0.5rem; color: var(--text-main); font-weight: 500;">Delta Junior College, Hyderabad, Telangana</p>
+                    <p style="color: var(--neon-cyan); margin-top: 1rem; font-weight: 600; font-size: 1.1rem;">Percentage: 96%</p>
+                </div>
+                
+                <!-- 10th Standard -->
+                <div class="cert-modern-card tilt-card" style="cursor: default;">
+                    <i class="fa-solid fa-book cert-icon" style="color: #8E24AA;"></i>
+                    <h4 style="font-size: 1.3rem;">Matriculation (10th)</h4>
+                    <p style="color: var(--neon-blue); font-weight: 700; margin-bottom: 0.5rem; font-size: 0.95rem; letter-spacing: 1px;">2019 - 2020</p>
+                    <p style="margin-bottom: 0.5rem; color: var(--text-main); font-weight: 500;">Spectra Global High School, Warangal, Telangana</p>
+                    <p style="color: var(--neon-cyan); margin-top: 1rem; font-weight: 600; font-size: 1.1rem;">GPA: 10</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section scroll-reveal" style="padding-bottom: 8rem; position: relative;">
+            <!-- Ambient glowing orbs -->
+            <div style="position: absolute; top: 10%; left: 5%; width: 400px; height: 400px; background: var(--neon-purple); filter: blur(150px); opacity: 0.2; z-index: 0; pointer-events: none;"></div>
+            <div style="position: absolute; bottom: 10%; right: 5%; width: 400px; height: 400px; background: var(--neon-blue); filter: blur(150px); opacity: 0.2; z-index: 0; pointer-events: none;"></div>
+            
+            <div class="skills-header" style="text-align: center; margin-bottom: 4rem; position: relative; z-index: 2;">
+                <h2 class="section-title" style="justify-content: center; margin-bottom: 1rem; font-size: 3rem;">
+                    Get In Touch
+                </h2>
+                <div style="width: 150px; height: 5px; background: linear-gradient(90deg, transparent, var(--neon-cyan), transparent); margin: 0 auto; box-shadow: 0 0 15px var(--neon-cyan);"></div>
+            </div>
+            
+            <div class="contact-single-box bento-card glass tilt-card" style="width: 100%; max-width: 1000px; margin: 0 auto; padding: 4rem; position: relative; overflow: hidden; border: 1px solid rgba(0, 229, 255, 0.3); background: linear-gradient(145deg, rgba(15,15,15,0.7), rgba(0,0,0,0.9)); box-shadow: 0 15px 45px rgba(0,0,0,0.6); z-index: 2;">
+                <div class="bento-glow cyan-glow" style="opacity: 0.15; top: 0; left: 0;"></div>
+                <div class="bento-glow purple-glow" style="opacity: 0.15; bottom: 0; right: 0;"></div>
+                
+                <div style="text-align: center; margin-bottom: 3.5rem; position: relative; z-index: 1; transform: translateZ(25px);">
+                    <p style="color: var(--text-muted); font-size: 1.25rem; max-width: 700px; margin: 0 auto;">Have an exciting project, a role, or just want to say hi? I'd love to hear from you. My digital door is always open.</p>
+                </div>
+                
+                <div style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap; margin-bottom: 4rem; position: relative; z-index: 1; transform: translateZ(25px);">
+                    <a href="mailto:varshitha450@gmail.com" class="contact-link-item pulse-hover" style="background: rgba(255,255,255,0.03); border-radius: 20px; padding: 1rem 1.5rem; display: flex; align-items: center; gap: 1rem;">
+                        <div class="contact-icon-box" style="width: 50px; height: 50px; font-size: 1.2rem; background: rgba(0,229,255,0.1); border-color: rgba(0,229,255,0.4); box-shadow: inset 0 0 15px rgba(0,229,255,0.2);"><i class="fa-solid fa-envelope" style="color: var(--neon-cyan);"></i></div>
+                        <div>
+                            <span class="contact-label" style="font-size: 0.8rem;">Email</span>
+                            <span class="contact-value" style="font-size: 1rem;">varshitha450@gmail.com</span>
+                        </div>
+                    </a>
+                    <a href="tel:+917013419100" class="contact-link-item pulse-hover" style="background: rgba(255,255,255,0.03); border-radius: 20px; padding: 1rem 1.5rem; display: flex; align-items: center; gap: 1rem;">
+                        <div class="contact-icon-box" style="width: 50px; height: 50px; font-size: 1.2rem; background: rgba(142,36,170,0.1); border-color: rgba(142,36,170,0.4); box-shadow: inset 0 0 15px rgba(142,36,170,0.2);"><i class="fa-solid fa-phone" style="color: var(--neon-purple);"></i></div>
+                        <div>
+                            <span class="contact-label" style="font-size: 0.8rem;">Phone</span>
+                            <span class="contact-value" style="font-size: 1rem;">+91-7013419100</span>
+                        </div>
+                    </a>
+                    <div style="display: flex; gap: 1rem; align-items: center;">
+                        <a href="https://www.linkedin.com/in/varshitha12/" target="_blank" class="social-icon" style="width: 50px; height: 50px; font-size: 1.4rem; border-color: rgba(0,229,255,0.3);"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://github.com/09Varshitha" target="_blank" class="social-icon" style="width: 50px; height: 50px; font-size: 1.4rem; border-color: rgba(0,229,255,0.3);"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+                
+
+            </div>
+        </section>
+
+    </main>
+    
+    <footer class="footer">
+        <p>Designed and Built by <span>Bhukya Varshitha</span></p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="main.js"></script>
+</body>
+</html>
